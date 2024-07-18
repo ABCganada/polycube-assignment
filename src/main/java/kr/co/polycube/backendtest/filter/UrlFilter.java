@@ -18,8 +18,7 @@ public class UrlFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
 
-        String url = request.getRequestURI() + request.getQueryString();
-        System.out.println(url);
+        String url = request.getRequestURI() + (request.getQueryString() != null ? "?" + request.getQueryString() : "");
 
         //db 접속 위해 통과
         if (url.startsWith("/h2-console")) {
