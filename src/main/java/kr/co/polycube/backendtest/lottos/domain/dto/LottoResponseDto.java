@@ -1,4 +1,4 @@
-package kr.co.polycube.backendtest.exception.dto;
+package kr.co.polycube.backendtest.lottos.domain.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class ExceptionDto {
+public class LottoResponseDto {
 
-    private String reason;
+    private int[] numbers;
 }
