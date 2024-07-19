@@ -87,7 +87,7 @@ public class LottoService {
         this.checkMode = checkMode;
     }
 
-    private int[] generateLotto() {
+    protected int[] generateLotto() {
         int[] numbers = new int[6];
         Set<Integer> set = new HashSet<>();
         Random random = new Random();
