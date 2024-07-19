@@ -1,7 +1,6 @@
-package kr.co.polycube.backendtest.lottos;
+package kr.co.polycube.backendtest.lottos.controller;
 
 import kr.co.polycube.backendtest.exception.ApiException;
-import kr.co.polycube.backendtest.lottos.controller.LottoController;
 import kr.co.polycube.backendtest.lottos.domain.dto.LottoDto;
 import kr.co.polycube.backendtest.lottos.service.LottoService;
 import org.junit.jupiter.api.Test;
@@ -17,7 +16,6 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.spy;
 
 @AutoConfigureMockMvc
 @WebMvcTest(LottoController.class)
